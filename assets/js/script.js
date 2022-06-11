@@ -17,16 +17,23 @@ generateBtn.addEventListener("click", writePassword);
 // generatePassword function
 function generatePassword() {
   var passwordLength = window.prompt(
-    "How many characters should your password be? Please choose a nubmer between 8 -128."
+    "How many characters should your password be? Please choose a nubmer between 8 - 128."
     );
-  if (passwordLength < 8 || passwordLength > 128) {
+  if (passwordLength < 8 || passwordLength > 128 || passwordLength === null || passwordLength == "") {
     alert("Password must be 8 - 128 characters. Please choose a valid length.");
     generatePassword();
   }
   else {
-  // return ;
-  }
-}
+    var generateNumbers = window.confirm(
+      "Should your password contain numbers? Choose OK for yes."
+    ); 
+    
+    var generateUpper = window.confirm(
+      "Should your password contain uppercase letters? Choose OK for yes."
+    );
 
-// object passwordText 
-// var passwordText = { }
+    var generateSymbols = window.confirm(
+      "Should your password contain symbols? Choose OK for yes."
+    );
+  }     
+};
