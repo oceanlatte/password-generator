@@ -37,10 +37,9 @@ function confirmPrompts() {
   if (window.confirm("Should your password contain numbers? Choose OK for yes.")) {
     //run the array if generateNumbers = true
     confirmedArray = confirmedArray.concat(numbersArray);
-    console.log(confirmedArray);
   }
   
-  if (window.confirm("Should your password contain lowercase letters? Choose OK for yes.")); {
+  if (window.confirm("Should your password contain lowercase letters? Choose OK for yes.")) {
     confirmedArray = confirmedArray.concat(lowerCase);
   }
   
@@ -50,6 +49,9 @@ function confirmPrompts() {
 
   if (window.confirm("Should your password contain symbols? Choose OK for yes.")) {
     confirmedArray = confirmedArray.concat(specialCharacters);
+  }
+  else {
+    confirmedArray = confirmedArray.concat(lowerCase);
   }
 };
 
@@ -62,6 +64,6 @@ function generatePassword() {
       passwordOutput = passwordOutput + confirmedArray[getRandomIndex];
     }
 
-  // return generatePassword;
+  // return generated password;
   return passwordOutput; 
 }
