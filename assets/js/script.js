@@ -26,7 +26,8 @@ function passwordLength() {
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-  debugger;
+
+  // check if a previous password has been generated
   if (!passwordText.value) {
     passwordText.value = password;
   }
