@@ -34,24 +34,30 @@ function passwordLength() {
 };
 
 function confirmPrompts() {
+  confirmedArray = [];
   if (window.confirm("Should your password contain numbers? Choose OK for yes.")) {
     //run the array if generateNumbers = true
     confirmedArray = confirmedArray.concat(numbersArray);
+    console.log(confirmedArray, "numbers");
   }
   
   if (window.confirm("Should your password contain lowercase letters? Choose OK for yes.")) {
     confirmedArray = confirmedArray.concat(lowerCase);
+    console.log(confirmedArray, "lowercase");
   }
   
   if (window.confirm("Should your password contain uppercase letters? Choose OK for yes.")) {
     confirmedArray = confirmedArray.concat(upperCase);
+    console.log(confirmedArray, "upper");
   }
 
   if (window.confirm("Should your password contain symbols? Choose OK for yes.")) {
     confirmedArray = confirmedArray.concat(specialCharacters);
+    console.log(confirmedArray, "symbols");
   }
-  else {
+  else if (confirmedArray.length == 0) {
     confirmedArray = confirmedArray.concat(lowerCase);
+    console.log(confirmedArray);
   }
 };
 
