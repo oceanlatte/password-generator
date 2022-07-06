@@ -7,11 +7,16 @@ This is our week 3 challenge to use the JavaScipt we have learned so far and app
 
 Going through this project felt more like a challenge on how we could use our resources (Google) and a reiteration of the importance of pseudo coding. When I tried to start this project my mind went into so many different directions I quickly realized I needed to slow down and start to pseudo code!
 
-This is where I started with psuedo code and where I initially got stuck!
-![pseudocode-example](assets/images/pseudo-coding-example.png)
+## Built With:
+* HTML
+* CSS
+* Javascript
 
-The finished product:
+
+## Preview
+The finished product: https://oceanlatte.github.io/password-generator/
 ![password-generator-screenshot](assets/images/generator-example.png)
+
 
 ## Credits
 There was a couple of issues I had with my original plan and through many Google searches I was able to find the pieces I needed to finish the project.
