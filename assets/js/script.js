@@ -16,7 +16,7 @@ function passwordLength() {
     "How many characters should your password be? Please choose a number between 8 - 128."
   ));
   console.log(characters);
-    if (characters < 8 || characters > 128 || characters == NaN || characters == "") {
+    if (characters < 8 || characters > 128 || !characters) {
       alert("Password must be between 8 - 128. Please choose a valid length.");
       passwordLength();
     }
@@ -57,7 +57,6 @@ function confirmPrompts() {
   // if not options are chosen then use lowercase as default
   else if (confirmedArray.length == 0) {
     confirmedArray = confirmedArray.concat(lowerCase);
-    console.log(confirmedArray);
   }
 };
 
